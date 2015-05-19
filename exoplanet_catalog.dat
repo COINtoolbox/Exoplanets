@@ -1,0 +1,1230 @@
+name         nplanets
+
+11 Com        1
+11 UMi        1
+14 And        1
+14 Her        1
+16 Cygni        1
+18 Del        1
+1RXS1609        1
+1SWASP J1407        1
+24 Sex        2
+2M 044144        1
+2M 0746+20        1
+2M1207        1
+2M 2140+16        1
+2M 2206-20        1
+2MASS 0122-2439        1
+30 Ari        1
+42 Dra        1
+47 Uma        3
+4 Uma        1
+51 Peg        1
+55 Cancri        5
+61 Vir        3
+6 Lyn        1
+70 Vir        1
+75 Cet        1
+7 CMa        1
+81 Cet        1
+83 Leonis        2
+91 Aquarii        1
+AB Pic        1
+alf Ari        1
+Alpha Centauri        1
+BD-082823        2
+BD-10 3166        1
+BD-114672        1
+BD14 4559        1
+BD+15 2940        1
+BD-17 63        1
+BD+20 1790        1
+BD20 2457        2
+BD+20 274        1
+BD +48 738        1
+BD+49 828        1
+beta Cancri        1
+beta Pic        1
+beta Ursae Minoris        1
+CFBDS 1458        1
+CFBDSIR2149        1
+CHXR 73        1
+CoRoT-10        1
+CoRoT-11        1
+CoRoT-12        1
+CoRoT-13        1
+CoRoT-14        1
+CoRoT-16        1
+CoRoT-17        1
+CoRoT-18        1
+CoRoT-19        1
+CoRoT-1        1
+CoRoT-20        1
+CoRoT-21        1
+CoRoT-22        1
+CoRoT-23        1
+CoRoT-24        2
+CoRoT-25        1
+CoRoT-26        1
+CoRoT-27        1
+CoRoT-28        1
+CoRoT-29        1
+CoRoT-2        1
+CoRoT-3        1
+CoRoT-4        1
+CoRoT-5        1
+CoRoT-6        1
+CoRoT-7        2
+CoRoT-8        1
+CoRoT-9        1
+CT Cha        1
+DH Tau        1
+DP Leo        1
+EPIC 201208431        1
+EPIC 201295312        1
+EPIC 201338508        2
+EPIC 201367065        3
+EPIC 201384232        1
+EPIC 201393098        1
+EPIC 201403446        1
+EPIC 201445392        2
+EPIC 201465501        1
+EPIC 201505350        2
+EPIC 201546283        1
+EPIC 201549860        1
+EPIC 201565013        1
+EPIC 201577035        1
+EPIC 201596316        1
+EPIC 201613023        1
+EPIC 201617985        1
+EPIC 201629650        1
+EPIC 201635569        1
+EPIC 201637175        1
+EPIC 201702477        1
+EPIC 201736247        1
+EPIC 201754305        2
+EPIC 201828749        1
+EPIC 201855371        1
+EPIC 201912552        1
+eps Corona Borealis        1
+eps Eridani        1
+eps Tau        1
+eta Cet        2
+Fomalhaut        1
+FU Tau        1
+FW Tau        1
+gamma Cephei        1
+Gamma Leonis        1
+GJ 160.2        1
+GJ 180        2
+GJ 229        1
+GJ 27.1        1
+GJ 422        1
+GJ 682        2
+Gliese 1214        1
+Gliese 15        1
+Gliese 163        3
+Gliese 176        1
+Gliese 179        1
+Gliese 221        2
+Gliese 3021        1
+Gliese 317        2
+Gliese 328        1
+Gliese 3293        3
+Gliese 3341        1
+Gliese 3470        1
+Gliese 3634        1
+Gliese 433        2
+Gliese 436        2
+Gliese 504        1
+Gliese 581        6
+Gliese 649        2
+Gliese 667        7
+Gliese 674        1
+Gliese 676        4
+Gliese 687        1
+Gliese 777        2
+Gliese 785        2
+Gliese 832        2
+Gliese 849        2
+Gliese 86        1
+Gliese 876        4
+GQ Lup        1
+GSC 06214-00210        1
+GU Psc        1
+HAT-P-11        1
+HAT-P-12        1
+HAT-P-13        2
+HAT-P-14        1
+HAT-P-15        1
+HAT-P-16        1
+HAT-P-17        2
+HAT-P-18        1
+HAT-P-19        1
+HAT-P-1        1
+HAT-P-20        1
+HAT-P-21        1
+HAT-P-22        1
+HAT-P-23        1
+HAT-P-24        1
+HAT-P-25        1
+HAT-P-26        1
+HAT-P-27        1
+HAT-P-28        1
+HAT-P-29        1
+HAT-P-2        1
+HAT-P-30        1
+HAT-P-31        1
+HAT-P-32        1
+HAT-P-33        1
+HAT-P-34        1
+HAT-P-35        1
+HAT-P-36        1
+HAT-P-37        1
+HAT-P-38        1
+HAT-P-39        1
+HAT-P-3        1
+HAT-P-40        1
+HAT-P-41        1
+HAT-P-42        1
+HAT-P-43        1
+HAT-P-44        2
+HAT-P-45        1
+HAT-P-46        2
+HAT-P-49        1
+HAT-P-4        1
+HAT-P-50        1
+HAT-P-51        1
+HAT-P-52        1
+HAT-P-53        1
+HAT-P-54        1
+HAT-P-5        1
+HAT-P-6        1
+HAT-P-7        1
+HAT-P-8        1
+HAT-P-9        1
+HATS-10        1
+HATS-13        1
+HATS-14        1
+HATS-1        1
+HATS-2        1
+HATS-3        1
+HATS-4        1
+HATS-5        1
+HATS-6        1
+HATS-9        1
+HD 100546        2
+HD 100655        1
+HD 100777        1
+HD 10180        9
+HD 101930        1
+HD 102117        1
+HD 102195        1
+HD 102272        2
+HD 102329        1
+HD 102365        1
+HD 102956        1
+HD 103197        1
+HD 103720        1
+HD 103774        1
+HD 104067        1
+HD 10442        1
+HD 104985        1
+HD 106252        1
+HD 106270        1
+HD 10647        1
+HD 106515 A        1
+HD 106906        1
+HD 10697        1
+HD 107148        1
+HD 108147        1
+HD 108341        1
+HD 108863        1
+HD 108874        2
+HD 109246        1
+HD 109271        2
+HD 109749        1
+HD 110014        1
+HD 111232        1
+HD 113337        1
+HD 113538        2
+HD 114386        2
+HD 114613        1
+HD 114729        1
+HD 114762        1
+HD 114783        1
+HD 11506        2
+HD 116029        1
+HD 117207        1
+HD 117618        2
+HD 118203        1
+HD 11964        2
+HD 11977        1
+HD 120084        1
+HD 121504        1
+HD 122430        1
+HD 125595        1
+HD 125612        3
+HD 126525        1
+HD 126614        1
+HD 12661        2
+HD 128311        2
+HD 129445        1
+HD 130322        1
+HD 131496        1
+HD 131664        1
+HD 13189        1
+HD 132406        1
+HD 132563        1
+HD 134060        2
+HD 134606        3
+HD 134987        2
+HD 136352        3
+HD 136418        1
+HD 137388        1
+HD 13808        2
+HD 13908        2
+HD 13931        1
+HD 139357        1
+HD 141399        4
+HD 141937        1
+HD 142022        1
+HD 142245        1
+HD 142415        1
+HD 142        2
+HD 143361        1
+HD 145377        1
+HD 145457        1
+HD 145934        1
+HD 1461        2
+HD 147018        2
+HD 147513        1
+HD 148156        1
+HD 148427        1
+HD 149026        1
+HD 149143        1
+HD 1502        1
+HD 150433        1
+HD 150706        1
+HD 152079        1
+HD 152581        1
+HD 153950        1
+HD 154088        1
+HD 154345        1
+HD 154672        1
+HD 154857        2
+HD 155358        2
+HD 156279        1
+HD 156411        1
+HD 156668        1
+HD 156846        1
+HD 157172        1
+HD 158038        1
+HD 159243        2
+HD 159868        2
+HD 1605        2
+HD 16141        1
+HD 16175        1
+HD 162020        1
+HD 163607        2
+HD 16417        1
+HD 164509        1
+HD 164604        1
+HD 164922        1
+HD 1666        1
+HD 166724        1
+HD 167042        1
+HD 168443        2
+HD 168746        1
+HD 1690        1
+HD 169830        2
+HD 170469        1
+HD 17092        1
+HD 171028        1
+HD 171238        1
+HD 17156        1
+HD 173416        1
+HD 175167        1
+HD 175541        1
+HD 176051        1
+HD 177830        2
+HD 178911        1
+HD 179079        1
+HD 179949        1
+HD 180314        1
+HD 180902        1
+HD 181342        1
+HD 181433        3
+HD 181720        1
+HD 183263        2
+HD 185269        1
+HD 187085        1
+HD 187123        2
+HD 18742        1
+HD 188015        1
+HD 189567        1
+HD 189733        1
+HD 190647        1
+HD 190984        1
+HD 192263        1
+HD 192699        1
+HD 195019        1
+HD 196050        1
+HD 196067        1
+HD 196885        1
+HD 197037        1
+HD 19994        1
+HD 20003        2
+HD 200964        2
+HD 202206        2
+HD 20367        1
+HD 2039        1
+HD 204313        3
+HD 204941        1
+HD 205739        1
+HD 206610        1
+HD 20782        3
+HD 207832        2
+HD 20794        3
+HD 208487        1
+HD 208527        1
+HD 20868        1
+HD 209458        1
+HD 210277        1
+HD 210702        1
+HD 212301        1
+HD 212771        1
+HD 213240        1
+HD 215152        2
+HD 215456        2
+HD 215497        2
+HD 216435        1
+HD 216437        1
+HD 216536        1
+HD 216770        1
+HD 21693        2
+HD 217107        2
+HD 217786        1
+HD 218566        1
+HD 219077        1
+HD 219415        1
+HD 219828        1
+HD 220074        1
+HD 220689        1
+HD 220773        1
+HD 221287        1
+HD 222155        1
+HD 222582        1
+HD 224693        1
+HD 22781        1
+HD 23079        1
+HD 23127        1
+HD 231701        1
+HD 233604        1
+HD 23596        1
+HD 240210        1
+HD 240237        1
+HD 24040        1
+HD 25171        1
+HD 2638        1
+HD 27442        1
+HD 27631        1
+HD 27894        1
+HD 28185        1
+HD 28254        1
+HD 285507        1
+HD 28678        1
+HD 290327        1
+HD 2952        1
+HD 30177        1
+HD 30562        1
+HD 30669        1
+HD 30856        1
+HD 31253        1
+HD 31527        3
+HD 32518        1
+HD 330075        1
+HD 33142        1
+HD 33283        1
+HD 33564        1
+HD 34445        1
+HD 3651        2
+HD 37124        3
+HD 37605        2
+HD 38283        1
+HD 38529        2
+HD 38801        1
+HD 38858        1
+HD 39091        1
+HD 39194        3
+HD 40307        6
+HD 40979        1
+HD 41004        1
+HD 4113        1
+HD 41248        2
+HD 4203        2
+HD 4208        1
+HD 4308        1
+HD 4313        1
+HD 43197        1
+HD 43691        1
+HD 44219        1
+HD 45184        1
+HD 45350        1
+HD 45364        2
+HD 45652        1
+HD 46375        1
+HD 47186        2
+HD 4732        2
+HD 47536        2
+HD 48265        1
+HD 49674        1
+HD 50499        1
+HD 50554        1
+HD 51608        2
+HD 52265        1
+HD 5319        2
+HD 5608        1
+HD 564        1
+HD 5891        1
+HD 59686        1
+HD 60532        2
+HD 62509        1
+HD 63454        1
+HD 63765        1
+HD 6434        1
+HD 65216        2
+HD 66141        1
+HD 66428        1
+HD 67087        2
+HD 6718        1
+HD 68988        1
+HD 69830        3
+HD 70573        1
+HD 70642        1
+HD 7199        1
+HD 72659        1
+HD 73256        1
+HD 73267        1
+HD 73526        2
+HD 73534        1
+HD 74156        2
+HD 7449        2
+HD 75289        1
+HD 75784        1
+HD 75898        1
+HD 76700        1
+HD 77338        1
+HD 7924        3
+HD 79498        1
+HD 80606        1
+HD 81040        1
+HD 81688        1
+HD 82886        1
+HD 82943        2
+HD 83443        1
+HD 8535        1
+HD 85390        1
+HD 85512        1
+HD 8574        1
+HD 86081        1
+HD 86226        1
+HD 86264        1
+HD 8673        1
+HD 87883        1
+HD 88133        1
+HD 89307        1
+HD 89744        1
+HD 90156        1
+HD 92788        1
+HD 93083        1
+HD 93385        2
+HD 9446        2
+HD 95086        1
+HD 95089        1
+HD 95127        1
+HD 9578        1
+HD 96063        1
+HD 96127        1
+HD 96167        1
+HD 96700        2
+HD 97658        1
+HD 98219        1
+HD 98649        1
+HD 99109        1
+HD 99706        1
+HIP 116454        1
+HIP 11952        2
+HIP 12961        1
+HIP 13044        1
+HIP 14810        3
+HIP 5158        2
+HIP 57050        1
+HIP 57274        3
+HIP 63242        1
+HIP 67851        2
+HIP 70849        1
+HIP 75458        1
+HIP 78530        1
+HIP 79431        1
+HIP 91258        1
+HIP 97233        1
+HN Peg        1
+HR 810        1
+HR 8799        4
+HU Aqr(AB)        1
+HW Vir        1
+Kappa Andromedae        1
+kappa CrB        1
+Kapteyn        2
+KELT-2A        1
+KELT-3        1
+KELT-6        1
+KELT-7        1
+Kepler-100        3
+Kepler-101        2
+Kepler-102        5
+Kepler-103        2
+Kepler-104        3
+Kepler-105        2
+Kepler-106        4
+Kepler-107        4
+Kepler-108        2
+Kepler-109        2
+Kepler-10        2
+Kepler-110        2
+Kepler-111        2
+Kepler-112        2
+Kepler-113        2
+Kepler-114        3
+Kepler-115        2
+Kepler-116        2
+Kepler-117        2
+Kepler-118        2
+Kepler-119        2
+Kepler-11        6
+Kepler-120        2
+Kepler-121        2
+Kepler-122        5
+Kepler-123        2
+Kepler-124        3
+Kepler-125        2
+Kepler-126        3
+Kepler-127        3
+Kepler-128        2
+Kepler-129        2
+Kepler-12        1
+Kepler-130        3
+Kepler-131        2
+Kepler-132        3
+Kepler-133        2
+Kepler-134        2
+Kepler-135        2
+Kepler-136        2
+Kepler-137        2
+Kepler-139        2
+Kepler-13        1
+Kepler-140        2
+Kepler-141        2
+Kepler-142        3
+Kepler-143        2
+Kepler-144        2
+Kepler-146        2
+Kepler-147        2
+Kepler-148        2
+Kepler-149        3
+Kepler-14        1
+Kepler-150        4
+Kepler-151        2
+Kepler-152        2
+Kepler-153        2
+Kepler-154        2
+Kepler-155        2
+Kepler-156        2
+Kepler-157        2
+Kepler-158        2
+Kepler-159        2
+Kepler-15        1
+Kepler-160        2
+Kepler-161        2
+Kepler-162        2
+Kepler-163        2
+Kepler-164        3
+Kepler-165        2
+Kepler-166        2
+Kepler-167        2
+Kepler-168        2
+Kepler-169        5
+Kepler-16        1
+Kepler-170        2
+Kepler-171        3
+Kepler-172        4
+Kepler-173        2
+Kepler-174        3
+Kepler-175        2
+Kepler-176        3
+Kepler-178        3
+Kepler-179        2
+Kepler-17        1
+Kepler-180        2
+Kepler-181        2
+Kepler-182        2
+Kepler-183        2
+Kepler-184        3
+Kepler-185        2
+Kepler-186        5
+Kepler-187        2
+Kepler-188        2
+Kepler-189        2
+Kepler-18        3
+Kepler-190        2
+Kepler-191        2
+Kepler-192        2
+Kepler-193        2
+Kepler-194        3
+Kepler-195        2
+Kepler-196        2
+Kepler-197        4
+Kepler-198        2
+Kepler-199        2
+Kepler-19        2
+Kepler-200        2
+Kepler-201        2
+Kepler-202        2
+Kepler-203        3
+Kepler-204        2
+Kepler-205        2
+Kepler-206        3
+Kepler-207        3
+Kepler-208        4
+Kepler-209        2
+Kepler-20        5
+Kepler-210        2
+Kepler-211        2
+Kepler-212        2
+Kepler-213        2
+Kepler-214        2
+Kepler-215        4
+Kepler-216        2
+Kepler-217        2
+Kepler-218        2
+Kepler-219        3
+Kepler-21        1
+Kepler-220        4
+Kepler-221        4
+Kepler-222        3
+Kepler-223        4
+Kepler-224        4
+Kepler-225        2
+Kepler-226        3
+Kepler-227        2
+Kepler-228        3
+Kepler-229        3
+Kepler-22        1
+Kepler-230        2
+Kepler-231        2
+Kepler-232        2
+Kepler-233        2
+Kepler-234        2
+Kepler-235        4
+Kepler-236        2
+Kepler-237        2
+Kepler-238        5
+Kepler-239        2
+Kepler-23        3
+Kepler-240        2
+Kepler-241        2
+Kepler-242        2
+Kepler-243        2
+Kepler-244        3
+Kepler-245        3
+Kepler-246        2
+Kepler-247        3
+Kepler-248        2
+Kepler-249        3
+Kepler-24        4
+Kepler-250        3
+Kepler-251        4
+Kepler-252        2
+Kepler-253        3
+Kepler-254        3
+Kepler-255        2
+Kepler-256        4
+Kepler-257        3
+Kepler-258        2
+Kepler-259        2
+Kepler-25        3
+Kepler-260        2
+Kepler-261        2
+Kepler-262        2
+Kepler-263        2
+Kepler-264        2
+Kepler-265        4
+Kepler-266        2
+Kepler-267        3
+Kepler-268        2
+Kepler-269        2
+Kepler-26        4
+Kepler-270        2
+Kepler-271        2
+Kepler-272        3
+Kepler-273        2
+Kepler-274        2
+Kepler-275        3
+Kepler-276        3
+Kepler-277        2
+Kepler-278        2
+Kepler-279        3
+Kepler-27        2
+Kepler-280        2
+Kepler-281        2
+Kepler-282        4
+Kepler-283        2
+Kepler-284        2
+Kepler-285        2
+Kepler-286        4
+Kepler-287        2
+Kepler-288        3
+Kepler-289        3
+Kepler-28        2
+Kepler-290        2
+Kepler-291        2
+Kepler-292        5
+Kepler-293        2
+Kepler-294        2
+Kepler-295        3
+Kepler-296        5
+Kepler-297        2
+Kepler-298        3
+Kepler-299        4
+Kepler-29        2
+Kepler-300        2
+Kepler-301        3
+Kepler-302        2
+Kepler-303        2
+Kepler-304        3
+Kepler-305        3
+Kepler-306        4
+Kepler-307        3
+Kepler-308        2
+Kepler-309        2
+Kepler-310        3
+Kepler-311        2
+Kepler-312        2
+Kepler-313        2
+Kepler-314        2
+Kepler-315        2
+Kepler-316        2
+Kepler-317        2
+Kepler-318        2
+Kepler-319        3
+Kepler-31        3
+Kepler-320        2
+Kepler-321        2
+Kepler-322        2
+Kepler-323        2
+Kepler-324        2
+Kepler-325        3
+Kepler-326        3
+Kepler-327        3
+Kepler-329        2
+Kepler-32        5
+Kepler-330        2
+Kepler-331        3
+Kepler-332        3
+Kepler-333        2
+Kepler-334        3
+Kepler-335        2
+Kepler-336        3
+Kepler-337        2
+Kepler-338        4
+Kepler-339        3
+Kepler-33        5
+Kepler-340        2
+Kepler-341        4
+Kepler-342        3
+Kepler-343        2
+Kepler-344        2
+Kepler-345        2
+Kepler-346        2
+Kepler-347        2
+Kepler-348        2
+Kepler-349        2
+Kepler-34        1
+Kepler-350        3
+Kepler-351        2
+Kepler-352        2
+Kepler-353        2
+Kepler-354        3
+Kepler-355        2
+Kepler-356        2
+Kepler-357        3
+Kepler-358        2
+Kepler-359        3
+Kepler-35        1
+Kepler-360        2
+Kepler-361        2
+Kepler-362        2
+Kepler-363        3
+Kepler-364        2
+Kepler-365        2
+Kepler-366        2
+Kepler-367        2
+Kepler-368        2
+Kepler-369        2
+Kepler-36        2
+Kepler-370        2
+Kepler-371        2
+Kepler-372        3
+Kepler-373        2
+Kepler-374        3
+Kepler-375        2
+Kepler-376        2
+Kepler-377        2
+Kepler-378        2
+Kepler-379        2
+Kepler-37        4
+Kepler-380        2
+Kepler-381        2
+Kepler-382        2
+Kepler-383        2
+Kepler-384        2
+Kepler-385        2
+Kepler-386        2
+Kepler-387        2
+Kepler-388        2
+Kepler-389        2
+Kepler-38        1
+Kepler-390        2
+Kepler-391        2
+Kepler-392        2
+Kepler-393        2
+Kepler-394        2
+Kepler-395        2
+Kepler-397        2
+Kepler-398        2
+Kepler-399        3
+Kepler-400        2
+Kepler-401        2
+Kepler-402        4
+Kepler-403        2
+Kepler-404        2
+Kepler-405        2
+Kepler-406        2
+Kepler-407        2
+Kepler-409        1
+Kepler-410        1
+Kepler-412        1
+Kepler-413        1
+Kepler-418        1
+Kepler-41        1
+Kepler-421        1
+Kepler-422        1
+Kepler-423        1
+Kepler-424        2
+Kepler-42        3
+Kepler-430        2
+Kepler-431        3
+Kepler-434        1
+Kepler-436        2
+Kepler-437        1
+Kepler-438        1
+Kepler-439        1
+Kepler-440        1
+Kepler-441        1
+Kepler-442        1
+Kepler-443        1
+Kepler-444        5
+Kepler-445        3
+Kepler-446        3
+Kepler-447        1
+Kepler-44        1
+Kepler-45        1
+Kepler-46        3
+Kepler-47        2
+Kepler-48        4
+Kepler-49        4
+Kepler-4        1
+Kepler-50        2
+Kepler-51        3
+Kepler-52        3
+Kepler-53        3
+Kepler-54        3
+Kepler-55        5
+Kepler-56        3
+Kepler-57        2
+Kepler-58        3
+Kepler-59        2
+Kepler-5        1
+Kepler-60        3
+Kepler-61        1
+Kepler-62        5
+Kepler-63        1
+Kepler-65        3
+Kepler-66        1
+Kepler-67        1
+Kepler-68        3
+Kepler-69        2
+Kepler-6        1
+Kepler-71        1
+Kepler-74        1
+Kepler-75        1
+Kepler-76        1
+Kepler-77        1
+Kepler-79        4
+Kepler-7        1
+Kepler-80        4
+Kepler-81        3
+Kepler-82        4
+Kepler-83        3
+Kepler-84        5
+Kepler-85        4
+Kepler-87        2
+Kepler-89        4
+Kepler-8        1
+Kepler-90        7
+Kepler-91        1
+Kepler-93        2
+Kepler-94        2
+Kepler-95        1
+Kepler-96        1
+Kepler-97        2
+Kepler-98        1
+Kepler-99        1
+Kepler-9        3
+KIC 10001893        3
+KIC 10905746        1
+KIC 6185331        1
+KIC 8435766        1
+KIC 9632895        1
+KOI-1194        3
+KOI-1257        1
+KOI-1299        2
+KOI-12        1
+KOI-135        1
+KOI-142        2
+KOI-1474        2
+KOI-1612        1
+KOI-1781        3
+KOI-183        1
+KOI-1843        3
+KOI-1860        4
+KOI-1873        2
+KOI-188        1
+KOI-1894        1
+KOI-192        1
+KOI-195        1
+KOI-206        1
+KOI-2113        2
+KOI-2672        2
+KOI-285        3
+KOI-314        3
+KOI-341        2
+KOI-368        1
+KOI-370        2
+KOI-372        2
+KOI-423        1
+KOI-428        1
+KOI-4427        1
+KOI-523        2
+KOI-55        2
+KOI-680        1
+KOI-806        3
+KOI-830        1
+LkCa 15        1
+Lupus-TR 3        1
+MOA-2007-BLG-192-L        1
+MOA-2007-BLG-400-L        1
+MOA-2008-BLG-310-L        1
+MOA-2008-BLG-379L        1
+MOA-2009-BLG-266L        1
+MOA-2009-BLG-319        1
+MOA-2009-BLG-387L        1
+MOA-2010-BLG-073L        1
+MOA-2010-BLG-328L        1
+MOA-2010-BLG-477L        1
+MOA-2011-BLG-262L        1
+MOA-2011-BLG-293L        1
+MOA-2011-BLG-322        1
+MOA-2012-BLG-311        1
+MOA-2013-BLG-220L        1
+MOA-bin-1        1
+mu Arae        4
+mu Leo        1
+NGC 2423 3        1
+NGC 4349 No 127        1
+NN Ser        2
+NSVS 14256825        2
+nu Oph        2
+NY Virginis        1
+OGLE-05-071L        1
+OGLE-05-169L        1
+OGLE-05-390L        1
+OGLE-06-109L        2
+OGLE-2007-BLG-368L        1
+OGLE-2008-BLG-092L        1
+OGLE-2008-BLG-355L        1
+OGLE-2011-BLG-0251        1
+OGLE-2011-BLG-0265L        1
+OGLE-2012-BLG-0026L        2
+OGLE-2012-BLG-0358L        1
+OGLE-2012-BLG-0406L        1
+OGLE-2013-BLG-0341        1
+OGLE235-MOA53        1
+OGLE2-TR-L9        1
+OGLE-TR-10        1
+OGLE-TR-111        1
+OGLE-TR-113        1
+OGLE-TR-132        1
+OGLE-TR-182        1
+OGLE-TR-211        1
+OGLE-TR-56        1
+Omega Serpentis        1
+omi CrB        1
+omi UMa        1
+Oph 11        1
+PH-1        1
+PH-2        1
+POTS-1        1
+Pr0201        1
+Pr0211        1
+PSO J318.5-22        1
+PSR 1257 12        3
+PSR 1719-14        1
+PSR B1620-26        1
+Qatar-1        1
+Qatar-2        1
+Rho Coronae Borealis        1
+Ross 458        1
+ROXs 12        1
+ROXs 42 B        1
+RR Cae        1
+SAND364        1
+SR 12 AB        1
+Sun        9
+SWEEPS-11        1
+SWEEPS-4        1
+tau Boo        1
+tau Ceti        5
+tau Gem        1
+TrES-1        1
+TrES-2        1
+TrES-3        1
+TrES-4        1
+TrES-5        1
+TYC 1422-614-1        2
+Upsilon Andromedae        4
+UScoCTIO 108        1
+UZ For(ab)        1
+V391 Peg        1
+WASP-100        1
+WASP-101        1
+WASP-103        1
+WASP-104        1
+WASP-106        1
+WASP-108        1
+WASP-109        1
+WASP-10        1
+WASP-110        1
+WASP-111        1
+WASP-112        1
+WASP-117        1
+WASP-11        1
+WASP-12        1
+WASP-13        1
+WASP-14        1
+WASP-15        1
+WASP-16        1
+WASP-17        1
+WASP-18        1
+WASP-19        1
+WASP-1        1
+WASP-20        1
+WASP-21        1
+WASP-22        1
+WASP-23        1
+WASP-24        1
+WASP-25        1
+WASP-26        1
+WASP-28        1
+WASP-29        1
+WASP-2        1
+WASP-31        1
+WASP-32        1
+WASP-33        1
+WASP-34        1
+WASP-35        1
+WASP-36        1
+WASP-37        1
+WASP-38        1
+WASP-39        1
+WASP-3        1
+WASP-41        1
+WASP-42        1
+WASP-43        1
+WASP-44        1
+WASP-45        1
+WASP-46        1
+WASP-47        1
+WASP-48        1
+WASP-49        1
+WASP-4        1
+WASP-50        1
+WASP-52        1
+WASP-53        1
+WASP-54        1
+WASP-55        1
+WASP-56        1
+WASP-57        1
+WASP-58        1
+WASP-59        1
+WASP-5        1
+WASP-60        1
+WASP-61        1
+WASP-62        1
+WASP-63        1
+WASP-64        1
+WASP-65        1
+WASP-66        1
+WASP-67        1
+WASP-68        1
+WASP-69        1
+WASP-6        1
+WASP-70        1
+WASP-71        1
+WASP-72        1
+WASP-73        1
+WASP-74        1
+WASP-75        1
+WASP-76        1
+WASP-77        1
+WASP-78        1
+WASP-79        1
+WASP-7        1
+WASP-80        1
+WASP-82        1
+WASP-83        1
+WASP-84        1
+WASP-85        1
+WASP-87        1
+WASP-88        1
+WASP-89        1
+WASP-8        1
+WASP-90        1
+WASP-94        2
+WASP-95        1
+WASP-96        1
+WASP-97        1
+WASP-98        1
+WASP-99        1
+WD 0806-661        1
+WTS-1        1
+WTS-2        1
+xi Aql        1
+XO-1        1
+XO-2        4
+XO-3        1
+XO-4        1
+XO-5        1
+YBP1194        1
+YBP1514        1
