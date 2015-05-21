@@ -1,6 +1,6 @@
 #name of output file
-filename = 'exoplanet_catalog.dat'
-file2 = 'html_hab_table.tex'
+filename = '/home/emille/Dropbox2/Dropbox/WGC/exoplanets/scripts/exoplanet_catalog.dat'
+file2 = '/home/emille/Dropbox2/Dropbox/WGC/exoplanets/scripts/html_hab_table.tex'
 ###########################################################################
 
 import xml.etree.ElementTree as ET, urllib, gzip, io
@@ -103,6 +103,73 @@ for system in oec.findall('.//system'):
     for planet in system.findall('.//planet'):
         dic_eccentricity[name].append(planet.findtext('eccentricity'))
 
+#get name of binary systems
+binary_sys = []
+for system in sys_name:
+    if dic_n_stars[system][0] > 1:
+        binary_sys.append(system)
+
+#get star temperature (exclude binaries)
+dic_star_temp = {}
+for system in oec.findall('.//system'):
+    if system.findtext('name') not in binary_sys:
+        if len(system.findall('.//star')) > 0:
+            for star in system.findall('.//star'):
+                dic_star_temp[system.findtext('name')] = [star.findtext('temperature')]
+        else:
+            dic_star_temp[system.findtext('name')] = [None]
+
+#get star metalicity (exclude binaries)
+dic_star_met = {}
+for system in oec.findall('.//system'):
+    if system.findtext('name') not in binary_sys:
+        if len(system.findall('.//star')) > 0:
+            for star in system.findall('.//star'):
+                dic_star_met[system.findtext('name')] = [star.findtext('metallicity')]
+        else:
+            dic_star_met[system.findtext('name')] = [None]    
+
+#get star radius (exclude binaries)
+dic_star_radius = {}
+for system in oec.findall('.//system'):
+    if system.findtext('name') not in binary_sys:
+        if len(system.findall('.//star')) > 0:
+            for star in system.findall('.//star'):
+                dic_star_radius[system.findtext('name')] = [star.findtext('radius')]
+        else:
+            dic_star_radius[system.findtext('name')] = [None]    
+
+
+#get star age (exclude binaries)
+dic_star_age = {}
+for system in oec.findall('.//system'):
+    if system.findtext('name') not in binary_sys:
+        if len(system.findall('.//star')) > 0:
+            for star in system.findall('.//star'):
+                dic_star_age[system.findtext('name')] = [star.findtext('age')]
+        else:
+            dic_star_age[system.findtext('name')] = [None]    
+
+#get star spectral type (exclude binaries)
+dic_star_type = {}
+for system in oec.findall('.//system'):
+    if system.findtext('name') not in binary_sys:
+        if len(system.findall('.//star')) > 0:
+            for star in system.findall('.//star'):
+                dic_star_type[system.findtext('name')] = [star.findtext('spectraltype')]
+        else:
+            dic_star_type[system.findtext('name')] = [None] 
+
+#get star mass (exclude binaries)
+dic_star_mass = {}
+for system in oec.findall('.//system'):
+    if system.findtext('name') not in binary_sys:
+        if len(system.findall('.//star')) > 0:
+            for star in system.findall('.//star'):
+                dic_star_mass[system.findtext('name')] = [star.findtext('mass')]
+        else:
+            dic_star_mass[system.findtext('name')] = [None] 
+
 
 variables = {'system_name': sys_name,
              'n_habitable_planets': dic_hab_planets,
@@ -131,9 +198,9 @@ variables_names = [['system_name', 'name'],
                    ]
 
 
-op3 = open('exoplanet.dat', 'w')
+op3 = open('full_catalogue.dat', 'w')
 for line in variables_names:
-    op3.write(line[1] + '    ')
+    op3.write(line[1] + '\t')
 op3.write('\n')
 for name in sys_name:
     if ' ' in name:
@@ -142,22 +209,75 @@ for name in sys_name:
         name2 = name 
 
     if variables['n_planets'][name][0] <= 1:
-        op3.write(str(name2) + '    ')
+        op3.write(str(name2) + '\t')
         for var in variables_names[1:]:
-            op3.write(str(variables[var[0]][name][0]) + '    ')
+            op3.write(str(variables[var[0]][name][0]) + '\t')
         op3.write('\n')
 
     else:
         for i in xrange(variables['n_planets'][name][0]):
-            op3.write(str(name2) + '    ')
+            op3.write(str(name2) + '\t')
             for var in variables_names[1:]:
                 if len(variables[var[0]][name]) == 1:
-                    op3.write(str(variables[var[0]][name][0]) + '    ')
+                    op3.write(str(variables[var[0]][name][0]) + '\t')
                 elif len(variables[var[0]][name]) > 1:
-                    op3.write(str(variables[var[0]][name][i]) + '    ') 
+                    op3.write(str(variables[var[0]][name][i]) + '\t') 
             op3.write('\n')                 
     
 op3.close()
 
+
+single_sys = [item for item in sys_name if item not in binary_sys]
+variables_sys = {
+             'system_name': single_sys, 
+             'n_habitable_planets': dic_hab_planets,
+             'n_stars': dic_n_stars,
+             'n_planets': dic_n_planets,
+             'declination': dic_declination, 
+             's_temperature': dic_star_temp,
+             's_metalicity': dic_star_met,
+             's_radius': dic_star_radius,
+             's_age': dic_star_age,
+             's_type': dic_star_type,                           
+             's_mass': dic_star_mass   
+             }
+
+variables_sys_names = [['system_name', 'name'],
+                   ['n_habitable_planets', 'n_hab_planets'],
+                   ['n_stars', 'n_stars'],
+                   ['n_planets', 'n_planets'],
+                   ['declination', 'declination'],
+                   ['s_temperature', 'star_temperature'],
+                   ['s_metalicity', 'star_metallicity'],
+                   ['s_radius', 'star_radius'],
+                   ['s_age', 'star_age'],                   
+                   ['s_type', 'star_spec_type'],
+                   ['s_mass', 'star_mass']
+                   ]
+
+
+
+
+
+op4 = open('system_catalogue.dat', 'w')
+for line in variables_sys_names:
+    op4.write(line[1] + '\t')
+op4.write('\n')
+for name in single_sys:
+    if ' ' in name:
+        name2 = name.replace(' ', '_')
+    else:
+        name2 = name
+
+    op4.write(name2 + '\t')
+    for item in variables_sys_names[1:]:
+        print variables_sys[item[0]][name][0]
+        try:
+            op4.write(str(variables_sys[item[0]][name][0]) + '\t')
+        except UnicodeError:
+            l1 =  'M3.5pm0.5'
+            op4.write(l1 + '\t')
+    op4.write('\n')
+op4.close()
 
 
