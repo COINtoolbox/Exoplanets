@@ -13,5 +13,5 @@ coefplot(M1)
 
 yweight <- predict(M1, list(wt = x2),type="response")
 
-plot(x2, y, pch = 16)
+plot(x2, y, pch = 16, xlab="Stelar radius", ylab="Number of planets")
 lines(x2, yweight)
