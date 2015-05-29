@@ -6,8 +6,6 @@ sock = urllib2.urlopen("http://www.openexoplanetcatalogue.com/systems/?filters=h
 htmlSource = sock.read()                            
 sock.close()              
 
-#name of output file
-filename = 'exoplanet_catalog.dat'
 ###########################################################################
 
 import xml.etree.ElementTree as ET, urllib, gzip, io
@@ -136,6 +134,7 @@ variables_names = [['system_name', 'name'],
                    ]
 
 
+# output file
 op3 = open('exoplanet.dat', 'w')
 for line in variables_names:
     op3.write(line[1] + '    ')
