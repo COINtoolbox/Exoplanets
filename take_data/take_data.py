@@ -1,16 +1,19 @@
-import urllib2
+try:
+    from urllib2 import urlopen
+except ImportError:
+    from urllib.request import urlopen
 
 
 #read data
-sock = urllib2.urlopen("http://www.openexoplanetcatalogue.com/systems/?filters=habitable") 
+sock = urlopen("http://www.openexoplanetcatalogue.com/systems/?filters=habitable") 
 htmlSource = sock.read()                            
 sock.close()              
 
 ###########################################################################
 
-import xml.etree.ElementTree as ET, urllib, gzip, io
+import xml.etree.ElementTree as ET, gzip, io
 url = "https://github.com/OpenExoplanetCatalogue/oec_gzip/raw/master/systems.xml.gz"
-oec = ET.parse(gzip.GzipFile(fileobj=io.BytesIO(urllib.urlopen(url).read())))
+oec = ET.parse(gzip.GzipFile(fileobj=io.BytesIO(urlopen(url).read())))
 
 #get all planet names
 planet_name = []
