@@ -1,0 +1,30 @@
+
+    model{
+    #Priors regression parameters
+    beta  ~ dmnorm(bet0[], Bet0[,])  
+    
+    #########
+    #Likelihood 
+    C <- 10000
+    phi <- 0
+    for (i in 1:N) {
+    #Log likelihood function of Generalized Poisson via zero trick: 
+    Zeros[i] ~ dpois(Zeros.mean[i])
+    Zeros.mean[i] <- -L[i] + C
+    l1[i] <- log(theta[i])
+    l2[i] <- (Y[i] - 1) * log(theta[i] + phi * Y[i])
+    l3[i] <- (theta[i] + phi * Y[i])
+    l4[i] <- loggam(Y[i] + 1)
+    L[i]  <-  l1[i] + l2[i] - l3[i] - l4[i]
+    
+    theta[i] <- (1 - phi) * exp(eta[i])
+    eta[i]   <- inprod(X[i,], beta[])           
+    z[i]     <- max(-1, -theta[i] / 4)  #Condition    
+    # theta[i] + phi * Y[i] must be >0..else the log is Inf
+    zz[i]    <- -Y[i]/theta[i]     
+    }          
+    lb <- max(z[])
+    lb2 <- min(zz[])
+    #phi ~ dunif(lb, 0.9999)
+    }
+    
