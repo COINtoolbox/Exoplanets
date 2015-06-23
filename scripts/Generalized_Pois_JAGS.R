@@ -22,7 +22,7 @@ y<-exo_dat$n_planets
 x1<-exo_dat$star_radius
 x2<-exo_dat$star_metallicity
 
-X <- model.matrix(~x1 + x2)
+X <- model.matrix(~x1 + x2+x1*x2)
 K <- ncol(X)
 N<-nrow(exo_dat)
 
@@ -62,11 +62,14 @@ cat("
     eta[i]   <- inprod(X[i,], beta[])           
     z[i]     <- max(-1, -theta[i] / 4)  #Condition    
     # theta[i] + phi * Y[i] must be >0..else the log is Inf
-    zz[i]    <- -Y[i]/theta[i]     
+    zz[i]    <- -Y[i]/theta[i]  
+# Prediction
+Pred[i]~dpois(Zeros.mean[i])
     }          
     lb <- max(z[])
     lb2 <- min(zz[])
     #phi ~ dunif(lb, 0.9999)
+
     }
     ",fill = TRUE)
 sink()
@@ -82,8 +85,9 @@ inits1  <- function () {
 params1 <- c("beta", 
              #"phi"
              "lb",
-             "lb2"
-)
+             "lb2",
+             "Pred"
+             )
 
 #Start Gibbs sampler
 GP   <- jags(data       = win.data1,
@@ -100,7 +104,10 @@ plot(GP)
 
 
 jagssamples <- as.mcmc(GP)
+pred_exo<-summary(as.mcmc.list(jagssamples, vars="Pred"),quantiles=c(0.005,0.025,0.25,0.5,0.75,0.975, 0.995))
+
 
 gsamples<-ggs(jagssamples)
 
 ggs_density(gsamples)
+

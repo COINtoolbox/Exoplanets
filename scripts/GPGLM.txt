@@ -21,10 +21,13 @@
     eta[i]   <- inprod(X[i,], beta[])           
     z[i]     <- max(-1, -theta[i] / 4)  #Condition    
     # theta[i] + phi * Y[i] must be >0..else the log is Inf
-    zz[i]    <- -Y[i]/theta[i]     
+    zz[i]    <- -Y[i]/theta[i]  
+# Prediction
+Pred[i]<-exp(L[i])
     }          
     lb <- max(z[])
     lb2 <- min(zz[])
     #phi ~ dunif(lb, 0.9999)
+
     }
     
