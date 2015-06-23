@@ -1,5 +1,17 @@
 library(R2jags)
-
+library(rjags)
+library(ggmcmc)
+library(ggplot2)
+library(ggthemes)
+library(pander)
+library(Cairo)
+library(plyr)
+library(MASS)
+library(scales)
+library(plyr)
+require(gdata)
+require(runjags)
+require(gdata)
 # Data
 exo_dat<-read.table("../take_data/system_catalogue.dat",sep="\t",header=TRUE)
 # select for now Period,  Planet radius, Planet mass
@@ -81,6 +93,14 @@ GP   <- jags(data       = win.data1,
              n.thin     = 10,
              n.chains   = 3,
              n.burnin   = 5000,
-             n.iter     = 10000)
+             n.iter     = 20000)
 
 summary(GP)
+plot(GP)
+
+
+jagssamples <- as.mcmc(GP)
+
+gsamples<-ggs(jagssamples)
+
+ggs_density(gsamples)
