@@ -15,7 +15,8 @@ coefplot(M1)
 
 yweight <- predict(M1, list(wt = x3),type="response")
 
-plot(x3, y, pch = 16, xlab="Stelar radius", ylab="Number of planets")
+par(mar=c(4, 4, 2, 2))
+plot(x3, y, pch = 16, xlab="Stellar radius", ylab="Number of planets")
 lines(x3, yweight)
 
 ggplot(exo_dat,aes(x=star_metallicity,y=n_planets))+geom_point()
