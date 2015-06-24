@@ -64,7 +64,7 @@ cat("
     # theta[i] + phi * Y[i] must be >0..else the log is Inf
     zz[i]    <- -Y[i]/theta[i]  
 # Prediction
-Pred[i]~dpois(Zeros.mean[i])
+#Pred[i]<-exp(L[i])
     }          
     lb <- max(z[])
     lb2 <- min(zz[])
@@ -104,7 +104,7 @@ plot(GP)
 
 
 jagssamples <- as.mcmc(GP)
-pred_exo<-summary(as.mcmc.list(jagssamples, vars="Pred"),quantiles=c(0.005,0.025,0.25,0.5,0.75,0.975, 0.995))
+#pred_exo<-summary(as.mcmc.list(jagssamples, vars="Pred"),quantiles=c(0.005,0.025,0.25,0.5,0.75,0.975, 0.995))
 
 
 gsamples<-ggs(jagssamples)
