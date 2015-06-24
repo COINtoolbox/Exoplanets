@@ -4,7 +4,7 @@
     beta  ~ dmnorm(bet0[], Bet0[,])  
     # Prior for size
 
-    size~dunif(0.001,10)
+    size~dgamma(0.001,0.001)
     #########
     #Likelihood 
     for (i in 1:N) {
@@ -12,10 +12,20 @@
     log(mu[i])<-max(-20,min(20,eta[i]))# Ensures that large beta values do not cause numerical problems. 
 
      p[i]<-size/(size+mu[i])
-     Y[i]~dnegbin(p[i],size)T(1,)
+     Y[i]~dnegbin(p[i],size)T(1,10)
 #    Y[i]~dpois(mu[i])T(1,)
     # Prediction
     Pred[i]~dnegbin(p[i],size)T(1,10)
-    }          
+# Discrepancy measures
+YNew[i] ~dnegbin(p[i],size)T(1,10)
+    expY[i] <- mu[i]
+    varY[i] <- mu[i] + pow(mu[i],2) / size
+    PRes[i] <-(Y[i] - expY[i])/sqrt(varY[i])
+    PResNew[i] <-(YNew[i] - expY[i])/sqrt(varY[i])
+    D[i]<-pow(PRes[i],2)
+    DNew[i]<-pow(PResNew[i],2)
+    }
+Fit<-sum(D[1:N])
+New<-sum(DNew[1:N])
     }
     
