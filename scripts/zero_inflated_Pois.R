@@ -1,3 +1,5 @@
+# Zero-Inflated Poisson GLM
+
 library(R2jags)
 library(rjags)
 library(ggmcmc)
@@ -175,6 +177,14 @@ ggs_density(gsamples)
 
 
 
-
+p + stat_boxplot(colour="gray",geom ='errorbar')+geom_boxplot(aes(group=type,colour=type,fill=type),outlier.shape = 19,colour="gray",fatten=2,size=1,outlier.size=2,outlier.colour = "gray",notchwidth = 0.35,notch=F,data=clus_data)+
+  theme_hc()+
+  scale_fill_economist()+
+  theme(strip.background = element_rect(fill="gray95"),plot.background = element_rect(fill = 'white', colour = 'white'),
+        legend.position="none",plot.title = element_text(hjust=0.5),
+        axis.title.y=element_text(vjust=0.75),axis.text.x=element_text(size=25),
+        strip.text.x=element_text(size=25),
+        axis.title.x=element_text(vjust=-0.25),
+        text = element_text(size=25))
 
 
