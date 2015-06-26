@@ -20,10 +20,10 @@ exo_dat<-exo_dat0[complete.cases(exo_dat0[,c("n_planets","star_radius","star_met
 y<-exo_dat$n_planets
 #x1<-exo_dat$star_temperature
 x1<-scale(exo_dat$star_radius)
-x2<-scale(exo_dat$star_metallicity)
+x2<-scale(xo_dat$star_metallicity)
 x3<-scale(exo_dat$star_temperature)
 
-X <- model.matrix(~x1 + x2+x3)
+X <- model.matrix(~x1+x2)
 K <- ncol(X)
 N<-nrow(exo_dat)
 
@@ -106,8 +106,23 @@ GP1 <- run.jags(method="rjparallel", method.options=list(cl=cl),
                      plots=FALSE
 )
 
-jagssamples.nb <- as.mcmc.list(GP1)
+jagssamples<- as.mcmc.list(GP1)
 pred.NBerrx<-summary(as.mcmc.list(GP1,vars="Pred"),quantiles=c(0.005,0.025,0.25,0.5,0.75,0.975, 0.995))
+
+# Model comparison 
+
+# Predicted vs Observed 
+Pred<-ggs(jagssamples.nb,family=c("New"))[,"value"]
+Obs<-ggs(jagssamples.nb,family=c("Fit"))[,"value"]
+sqrt(mean((Pred-Obs)^2))
+
+
+# Dispersion parameter
+
+require(scales)
+Pres<-summary(as.mcmc.list(GP1, vars="PRes"),quantiles=0.5)$quantiles
+Dispersion = sum(Pres^2)/(N-3)# beta.0, beta.1 and k, 3 parameters
+
 
 
 
@@ -118,22 +133,10 @@ ggs_density(gsamples)
 
 
 
-#Start Gibbs sampler
-GP   <- jags(data       = win.data1,
-             inits      = inits,
-             parameters = params1,
-             model      = "GPGLM.txt",
-             n.thin     = 10,
-             n.chains   = 3,
-             n.burnin   = 5000,
-             n.iter     = 20000)
-
-summary(GP)
-plot(GP)
 
 
-jagssamples <- as.mcmc(GP)
-pred_exo<-summary(as.mcmc.list(jagssamples, vars="Pred"),quantiles=c(0.005,0.5,0.975))
+
+
 
 
 
