@@ -3,8 +3,9 @@
 library(MASS)
 library(reshape)
 library(ggplot2)
+library(devtools)
 library(VGAM) # dpospois - zero truncated poisson
-source("https://raw.githubusercontent.com/cran/HMMpa/master/R/dgenpois.R")
+source_url("https://raw.githubusercontent.com/cran/HMMpa/master/R/dgenpois.R")
 
 exo_dat = read.table("../take_data/system_catalogue.dat",sep="\t",header=TRUE)
 y = exo_dat$n_planets
@@ -38,7 +39,7 @@ names(CC)[2:3] = c("distribution", "density")
 
 ggplot(CC,aes(x=count,y=density)) + 
    geom_line(aes(colour=distribution), size=1) + 
-   scale_x_continuous(breaks=0:10) + 
+   scale_x_continuous(breaks=0:10)  +
    ggtitle(paste("Exoplanet count distribution for", length(y), "stars")) + 
    xlab("planet count")
 
