@@ -43,7 +43,7 @@ win.data1
 
 ########
 #Model
-sink("GPGLM.txt")
+sink("ZIPGLM.txt")
 cat("
     model{
     # 1. Priors 
@@ -111,10 +111,10 @@ params1 <- c("beta",
 
 library(parallel)
 cl <- makeCluster(3)
-GP1 <- run.jags(method="rjparallel", method.options=list(cl=cl),
+ZIP1 <- run.jags(method="rjparallel", method.options=list(cl=cl),
                      data = win.data1, 
                      inits = list(inits1,inits2,inits3),
-                     model="GPGLM.txt",
+                     model="ZIPGLM.txt",
                      n.chains = 3,
                      adapt=3000,
                      monitor=c(params1),
@@ -124,10 +124,10 @@ GP1 <- run.jags(method="rjparallel", method.options=list(cl=cl),
                      plots=FALSE
 )
 
-jagssamples<- as.mcmc.list(GP1)
-summary<-extend.jags(GP1,drop.monitor=c("PRes","Fit","New","Pred"), summarise=TRUE)
+jagssamples<- as.mcmc.list(ZIP1)
+summary<-extend.jags(ZIP1,drop.monitor=c("PRes","Fit","New","Pred"), summarise=TRUE)
 
-pred.NBerrx<-summary(as.mcmc.list(GP1,vars="Pred"),quantiles=c(0.005,0.025,0.25,0.5,0.75,0.975, 0.995))
+pred.NBerrx<-summary(as.mcmc.list(ZIP1,vars="Pred"),quantiles=c(0.005,0.025,0.25,0.5,0.75,0.975, 0.995))
 pred.NB2errx<-data.frame(star_radius=exo_dat$star_radius,mean=pred.NBerrx$quantiles[,4],lwr1=pred.NBerrx$quantiles[,3],lwr2=pred.NBerrx$quantiles[,2],lwr3=pred.NBerrx$quantiles[,1],upr1=pred.NBerrx$quantiles[,5],upr2=pred.NBerrx$quantiles[,6],upr3=pred.NBerrx$quantiles[,7])
 
 limits3<-aes(ymax = pred.NB2errx$upr3, ymin=pred.NB2errx$lwr3)
@@ -164,7 +164,7 @@ sqrt(mean((Pred-Obs)^2))
 # Dispersion parameter
 
 require(scales)
-Pres<-summary(as.mcmc.list(GP1, vars="PRes"),quantiles=0.5)$quantiles
+Pres<-summary(as.mcmc.list(ZIP1, vars="PRes"),quantiles=0.5)$quantiles
 Dispersion = sum(Pres^2)/(N-6)# beta.0, beta.1 and k, 3 parameters
 
 

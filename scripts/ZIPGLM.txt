@@ -1,0 +1,43 @@
+
+    model{
+    # 1. Priors 
+    beta  ~ dmnorm(bet0[], Bet0[,])  
+    aB ~ dmnorm(aB0[], AB0[,]) 
+    # Prior for size
+
+
+    # 2. Likelihood function
+    for (i in 1:N) {
+
+    # Logistic part
+
+    W[i] ~ dbern(psi.min1[i])
+    psi.min1[i] <- 1-psi[i]
+    eta.psi[i]  <- inprod(X[i,], aB[]) 
+    logit(psi[i]) <- eta.psi[i]
+
+    # Poisson part
+    Y[i]~dpois(mu.eff[i])
+    mu.eff[i]<-W[i]*mu[i]+0.00001
+    log(mu[i])<-max(-20,min(20,eta[i]))# Ensures that large beta values do not cause numerical problems. 
+    eta[i]<-inprod(X[i,], beta[]) 
+
+   # Discrepancy measures
+    
+    expY[i] <- mu[i]*(1-psi[i])
+    varY[i] <- (1-psi[i])*(mu[i] + psi[i]*pow(mu[i], 2))
+    PRes[i] <-(Y[i] - expY[i])/sqrt(varY[i])
+    D[i]<-pow(PRes[i],2)
+    
+   
+    # New Samples
+    YNew[i] ~dpois(mu.eff[i])
+    PResNew[i] <-(YNew[i] - expY[i])/sqrt(varY[i])
+    DNew[i]<-pow(PResNew[i],2)
+    # Prediction
+    Pred[i]~dpois(mu.eff[i])
+ }
+Fit<-sum(D[1:N])
+New<-sum(DNew[1:N])
+    }
+    
