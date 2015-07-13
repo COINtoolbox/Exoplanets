@@ -1,14 +1,13 @@
 library(R2jags)
 library(rjags)
+library(plyr)
 library(ggmcmc)
 library(ggplot2)
 library(ggthemes)
 library(pander)
 library(Cairo)
-library(plyr)
 library(MASS)
 library(scales)
-library(plyr)
 require(gdata)
 require(runjags)
 require(gdata)
@@ -20,7 +19,7 @@ exo_dat<-exo_dat0[complete.cases(exo_dat0[,c("n_planets","star_radius","star_met
 y<-exo_dat$n_planets
 #x1<-exo_dat$star_temperature
 x1<-scale(exo_dat$star_radius)
-x2<-scale(xo_dat$star_metallicity)
+x2<-scale(exo_dat$star_metallicity)
 x3<-scale(exo_dat$star_temperature)
 
 X <- model.matrix(~x1+x2)
