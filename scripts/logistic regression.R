@@ -9,7 +9,7 @@ xtabs(~n_hab_planets + n_planets, D)
 D$habplnt = D$n_hab_planets > 0  # define binary outcome: planets in habitable zone (0/1)
 xtabs(~habplnt, D)
 
-fit = glm(formula = habplnt ~ n_planets + star_temperature + star_metallicity + star_radius + star_mass, 
+fit = glm(formula = habplnt ~ n_planets + star_temperature + star_metallicity + star_radius + star_mass,
          data = D,
          family = "binomial")
 
